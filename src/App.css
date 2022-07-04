@@ -1,38 +1,44 @@
+@font-face {
+  font-family: hanson;
+  src: url("./Hanson-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000 url("./bg.png") center/ cover no-repeat;
+  height: 960px;
+}
 .App {
-  text-align: center;
+  position: relative;
+  padding-top: 78px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1250px) {
+  body {
+    margin-left: 368px;
+    margin-right: 368px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.large_text {
+  font-size: 100px;
+  color: #fff;
+  font-family: hanson;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: 42.56px;
+  color: #141365;
+  cursor: pointer;
+  padding: 12px 36px;
+  display: inline-block;
+  background: #c7c6fa;
+  border-radius: 48.6478px;
+  border: none;
+  outline: none;
+  margin-right: 26px;
+  font-family: 'Mulish';
 }
